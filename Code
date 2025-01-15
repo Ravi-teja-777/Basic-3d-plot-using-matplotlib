@@ -1,0 +1,13 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits import mplot3d
+
+x = [1,2,3,5,6,7,8,9,10,12,13,14,15,16,18,19,21,22]
+y = [100,90,80,60,60,55,60,65,70,70,75,76,78,79,90,99,99,100]
+z = [100,90,80,60,60,55,60,65,70,70,75,76,78,79,90,99,99,100]
+f = plt.figure()
+a = plt.axes(projection="3d")
+
+a.plot3D(x,y,z)
+a.scatter3D(x,y,z)
+plt.show()
